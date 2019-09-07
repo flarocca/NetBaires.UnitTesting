@@ -118,7 +118,7 @@ namespace NetBaires.Colaboraciones
             var hoy = DateTime.Today;
             var edad = hoy.Year - fechaDeNacimiento.Year;
 
-            if (hoy.Date > hoy.AddYears(-edad)) edad--;
+            if (fechaDeNacimiento.Date > hoy.AddYears(-edad)) edad--;
 
             return edad;
         }
